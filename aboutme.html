@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>About Me</title>
+    <link rel="stylesheet" href="main.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutme.html">About Me</a>
+          </li>
+          <li>
+            <img src="Image/sun_logo.png" alt="Your Logo" class="logo">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactme.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <section class="container">
+        <div class="content">
+            <h1 class="about-me">About Me:</h1>
+            <div class="scroll-down">Scroll Down</div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1 class="header">Interest & Hobbies</h1><br><br>
+            <p class="description">Having to cope through my studies, I have long forgotten my love
+              and appreciation for the arts. In recent days, undergoing a diploma
+              with the inclusion of design, reminds me of the old days where I spend
+              all day sketching whatever that popped in my head. This helped to relive
+              my passion for the arts yet once more. Along with the rise in technology,
+              I've caught myself in investing a lot of time into games and media as well.
+            </p>
+      </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1 class="header">My Values</h1><br><br>
+            <p class="description">Some of the core values I hold close to
+              me is open-mindedness and
+              personal growth. </br><br>
+              
+            I believe that keeping an open mind
+              and listening to other's perspective is
+            important. This makes the other party
+              feel listened and understood which  
+            can build a layer of trust. In 
+              addition, having a open mind can 
+            bring interesting topics and enables me to
+              gain many insights and open doors to new perspectives.</br><br>
+              
+            Personal growth is a value that resonates
+              a lot with me because the feeling of a
+            sense of achievement rushes whenever I
+              feel that I become a better version of
+            myself. Every year I try to set a new goal
+              for myself and work towards the goal.  
+            This way, I can move on with my life with
+               my heads up.</br>
+               </p>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+            <h1 class="header">My Skills</h1><br><br>
+            <h3 class="skills-header" style="font-weight: bold;">Technical Skills: </h3><br>
+            <h4 style="font-weight: bold;">Development: </h4>
+            <p class="tech-desc">
+              Programming Languages (E.g Python, Java, C+)<br>
+              Website Development (E.g. HTML, CSS, JS, PHP)<br>
+              Database (E.g. SQLite)<br>
+            </p><br>
+              <h4 style="font-weight: bold;">Design: </h4>
+            <p class="tech-desc">
+              Digital Art (E.g. Adobe Photoshop & Illustrator)<br>
+              Prototyping (E.g Adobe XD)<br>
+              3D Modelling (E.g. Blender)<br>
+            </p><br>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="content">
+          <h3 class="skills-header" style="font-weight: bold;">Critical Core Skills:</h3><br>
+          <h4 class="core-header" style="font-weight: bold;">Teamwork:</h4>
+          <p class="description">I believe good teamwork always
+            brings the best results. Given that everyone is human  
+            and are prone to mistakes, acknowledging our imperfections
+            allows us to collaborate as a team, offering reminders and
+            corrections. Hence, striving towards overall a better
+            performance.</p>
+          <br>
+            
+          <h4 class="core-header" style="font-weight: bold;">Problem Solving: </h4>
+          <p class="description">Problem solving has been ingrained
+            in my roots. I found myself always
+          including math in my life. For example,
+            during my school days, I've always
+          chosen mathemathics related subjects over the
+             other. To add on, I love to code.
+          The feeling of successfully completing
+            and fixing the code, the results, gives
+          such a great sense of accomplishment
+            and happiness.</p>
+        </div>
+    </section>
+
+    <div id="set-height"></div>
+
+    <video id="v0" tabindex="0", autobuffer preload>
+        <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="Video/2_final_animation0001-0150.mp4"></source>
+    </video>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="sticky.js"></script>
+    <script>
+
+        enterView({
+            selector: 'section',
+            enter: function(el) {
+                el.classList.add('entered');
+            }
+        })
+    
+        var frameNumber = 0, // start video at frame 0
+        // lower numbers = faster playback
+        playbackConst = 2000;
+        // get page height from video duration
+        setHeight = document.getElementById("set-height"), 
+        // select video element         
+        vid = document.getElementById('v0'); 
+        // var vid = $('#v0')[0]; // jquery option
+
+        // dynamically set the page height according to video length
+        vid.addEventListener('loadedmetadata', function() {
+        setHeight.style.height = (Math.floor(vid.duration) * playbackConst) + "px";
+        });
+
+        // Use requestAnimationFrame for smooth playback
+        function scrollPlay(){  
+        var frameNumber  = window.pageYOffset/playbackConst;
+        vid.currentTime  = frameNumber;
+        window.requestAnimationFrame(scrollPlay);
+        }
+
+        window.requestAnimationFrame(scrollPlay);
+
+  </script>
+
+</body>
+</html>

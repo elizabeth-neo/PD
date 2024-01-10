@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+
+body {
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    width: 130%;
+    left: -200px;
+    z-index: -1;
+}
+
+.navbar-light{
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+}
+
+.navbar li{
+    padding: 5px 100px;
+    font-style: 'Montserrat';
+    font-weight: bold;
+}
+
+.logo{
+    left: 44%;
+    top: -50px;
+    position: absolute;
+}
+

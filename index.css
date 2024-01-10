@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+/* Styles for the logo */
+nav{
+    z-index: 999;
+    position: fixed;
+}
+
+.navbar li{
+    padding: 5px 100px;
+    font-style: 'Montserrat';
+    font-weight: bold;
+}
+
+.logo{
+    left: 44%;
+    top: -50px;
+    position: absolute;
+}
+
+.title{
+    font-family: Montserrat;
+    color: white;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -999; /* Place it behind the content */
+}
+
+.button {
+    display: inline-block;
+    border-radius: 40px;
+    padding: 15px 25px;
+    background-color: white;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    
+}
+
+        .content {
+            text-align: center;
+            padding-top: 750px;
+            color: white;
+        }
+        
+        .content_welcome{
+            background-color: #13EB0C;
+            padding: 20px;
+            color:black;
+        }
+        
+        .content_welcome h2{
+            padding-top: 35px;
+            font-size: 50px;
+            font-family: 'Lucida Calligraphy';
+        }
+        
+        .content_welcome p{
+            margin-top:20px;
+            font-size:30px;
+            font-family: Montserrat;
+        }
+        
+        .hr_wel{
+            height: 8px; 
+            width: 100px;
+            margin-left: 610px;
+            margin-top: -50px;
+            border:none;
+        }
+        
+        .hr_about{
+            background-color: black;
+            height: 6px; 
+            width: 100px;
+            margin-left: 610px;
+            margin-top: -50px;
+            border:none;
+        }
+        
+        .grid-container-about{
+            align-items: center;
+            padding:50px 0px;
+            color:black;
+            font-family: Montserrat;
+            background-color: #FFF800;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 100px; /* Adjust the gap between the image and text */
+            text-align: left;
+        }
+        
+        .grid-container-portfolio{
+            align-items: center;
+            padding:50px 0px;
+            color:white;
+            font-family: Montserrat;
+            background-color: #EB178A;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 100px; /* Adjust the gap between the image and text */
+            text-align: right;
+        }
+        
+        .grid-container-contact{
+            align-items: center;
+            padding:50px 0px;
+            color:white;
+            font-family: Montserrat;
+            background-color: #650CEB;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 100px; /* Adjust the gap between the image and text */
+            text-align: left;
+        }
+
+        @media screen and (max-width: 600px) {
+            body{
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+            nav{
+                z-index: 999;
+            }
+
+            .navbar li{
+                text-align: center;
+            }
+            
+            .logo{
+                left:130px;
+            }
+
+            .h3_intro{
+                position: absolute;
+                margin-left: -90px;
+                margin-top: -20px;
+            }
+
+            .h1_name{
+                position: absolute;
+                font-size: 60px;
+                width: 80%;
+                margin-left:-160px;
+                margin-top: -20px;
+            }
+
+            .h3_role{
+                font-size: 20px;
+                width: 80%;
+                margin-left:-160px;
+                margin-top: 20px;
+            }
+
+            .girl-image{
+                width: 35%;
+                margin-left:-180px;
+                margin-top: 350px;
+            }
+
+            .grid-container-about{
+                display: block;
+                grid-template-columns: 1fr; /* Two equal columns */
+                gap: 100px; /* Adjust the gap between the image and text */
+                text-align: center;
+            }
+
+            .about-header{
+                padding-bottom: 150px;
+            }
+
+            .about-desc{
+                margin-left: 40px;
+                width: 80%;
+            }
+
+            .grid-container-portfolio{
+                display: block;
+                grid-template-columns: 1fr; /* Two equal columns */
+                gap: 100px; /* Adjust the gap between the image and text */
+                text-align: center;
+            }
+
+            .port-header{
+                padding-bottom: 150px;
+            }
+
+            .port-desc{
+                margin-left: 40px;
+                width: 80%;
+            }
+
+            .port-img{
+                position: absolute;
+                width: 35%;
+                margin-right: -115px;
+                margin-top: 660px;
+            }
+
+            .grid-container-contact{
+                display: block;
+                grid-template-columns: 1fr; /* Two equal columns */
+                gap: 100px; /* Adjust the gap between the image and text */
+                text-align: center;
+            }
+
+            .cont-header{
+                padding-bottom: 150px;
+            }
+
+            .cont-desc{
+                margin-left: 40px;
+                width: 80%;
+            }
+
+            .cont-img{
+                position: absolute;
+                width: 35%;
+                margin-left: -150px;
+                margin-top: 985px;
+            }
+
+
+            }
+        
+        
+        
+      

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+        
+nav{
+    z-index: 999;
+    position: fixed;
+}
+
+.navbar li{
+    padding: 5px 100px;
+    font-style: 'Montserrat';
+    font-weight: bold;
+}
+
+.sun_logo{
+    left: 44%;
+    top: -50px;
+    position: absolute;
+}
+
+.additional-content {
+    font-family: 'Lucida Calligraphy';
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 250%;
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+    left: -570%;
+    grid-gap: 20px;
+}
+
+.grid-container {
+    grid-template-columns: auto auto auto auto auto;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.down-arrow-button {
+    position: relative;
+    top: 80px;
+    left: -350%; /* Adjust the left position */
+    padding: 30px; /* Adjust padding as needed */
+    display: inline-block;
+}
+
+.down-arrow {
+    transform: rotate(90deg);
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #333; /* Adjust arrow color as needed */
+}
+
+#background-video {
+    z-index: -1; /* Place it behind the content */
+    position: fixed;
+}
+
+.content {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    z-index: 2; /* Add this line */
+}
+
+.image-container {
+    float: right;
+    margin-right: 100px;
+    float: bottom;
+    margin-bottom: 200px;
+}
+
+.title{
+    position: absolute;
+    top: 90%;
+    left: -150%;
+    width: 400%;
+    font-family: 'Lucida Calligraphy';
+    font-size: 50px;
+}
+
+.web-desc {
+    position: absolute;
+    font-size: 30px;
+    left: 32%;
+    top: 80%;
+    font-family: 'Montserrat';
+    font-weight: 500;
+}
+
+.web-img:hover {
+    filter: grayscale(100%);
+}
+
+/* modal */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .down-arrow-button {
+        left: -130%;
+    }
+
+    nav{
+        width: 100%;
+    }
+    
+    .navbar li{
+        text-align: center;
+    }
+
+    .logo{
+        left:130px;
+    }
+
+    #background-video {
+        width: 500%;
+    }
+
+    .title{
+        font-size: 55px;
+        left: -40%;
+        width: 60%;
+    }
+
+    .additional-content{
+        /* margin-top: -110px;*/
+        position: absolute;
+        width: 200px;
+        margin-left: 600px; 
+        grid-template-columns: auto;
+    }
+
+    .web-desc {
+        display: none;
+    }
+
+.grid-container {
+    grid-template-columns: auto;
+}
+
+}

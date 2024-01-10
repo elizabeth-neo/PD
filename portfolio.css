@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); 
+body {
+    background-color: #c6d7de;
+    font-family: 'Montserrat';
+    overflow-x: hidden;
+}
+
+nav{
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+  }
+
+  .navbar li{
+    padding: 5px 100px;
+    font-style: 'Montserrat';
+    font-weight: bold;
+}
+
+img{
+    left: 44%;
+    top: -50px;
+    position: absolute;
+}
+
+#v0 {
+    position: fixed;
+    bottom: -50px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+
+#set-height {
+    display: block;
+}
+
+section {
+    z-index: 1;
+    position: relative;
+}
+
+.content {
+    position: sticky;
+    position: -webkit-sticky;
+    width: 100%;
+    top: 27%;
+}
+
+h1 {
+    width: 100%;
+    font-size: 3em;
+    display: inline-block;
+    padding: 0px 490px;
+    margin: 0;
+    text-align: center;
+}
+
+.illustration{
+    padding: 0px 535px;
+}
+
+.others{
+    padding: 0px 530px;
+}
+
+p { 
+    font-size: 1.5em;
+    padding: 0px 380px;
+    text-align: center;
+}
+
+.btn-light{
+    position: absolute;
+    left: 45%;
+    width: 10%;
+}
+
+/* The height of ech section */
+section:nth-of-type(1) {
+    height: 1200px;
+}
+section:nth-of-type(2) {
+    height: 1200px;
+}
+section:nth-of-type(3) {
+    height: 1400px;
+}
+
+.entered {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .navbar{
+        z-index: 999;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .navbar li{
+        text-align: center;
+    }
+    
+    img{
+        left:130px;
+    }
+
+    video{
+        top: 15%;
+    }
+
+    #v0{
+        width: 43%;
+    }
+
+    .web-des-head{
+        position: absolute;
+        top: -430px;
+        left:-390px;
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .web-des-cont{
+        position: absolute;
+        font-size: 20px;
+        padding: 0;
+        padding-right: 17px;
+        padding-left: 25px;
+        margin-top: 15px;
+    }
+
+    .illustration-head{
+        position: absolute;
+        top: -100px;
+        left:-450px;
+        width: 100%;
+        font-size: 60px;
+    }
+
+    .illu-cont{
+        position: absolute;
+        font-size: 20px;
+        padding: 0;
+        padding-right: 17px;
+        padding-left: 25px;
+        margin-top: 15px;
+    }
+
+    .others-head {
+        position: relative; /* Change to relative positioning */
+        font-size: 60px;
+        /* margin-top: 15px; */
+        left: -370px;
+    }
+
+    .others-cont{
+        position: absolute;
+        font-size: 20px;
+        padding: 0;
+        padding-right: 17px;
+        padding-left: 25px;
+        /* margin-top: 15px; */
+    }
+
+    .btn-light{
+        width:30%;
+        left: 140px;
+        margin-top: 160px;
+    }
+
+  }
